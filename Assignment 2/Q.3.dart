@@ -11,6 +11,9 @@ void main (){
       'Saturday',
       'Sunday',
   ];
+
+  // Removed days one by one from end of the list
+  
   while (days.isNotEmpty){
     String removedDays = days.removeLast();
     print('Removed Days: $removedDays');
