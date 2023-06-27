@@ -4,12 +4,14 @@ void main (){
   // "color" as "Red", "isSedan" as true. Write Dart code to check if the car is a sedan and
   // red in color. Print "Match" if both conditions are true, otherwise print "No match".
 
+  // create a map of car with key value pair
   Map<String, dynamic> car = {
     'brand': 'Toyota',
     'color': 'red',
     'isSedan': true
   };
-
+  
+  // using if else method to check Car match
   if (car['color'] == 'red' && car['isSedan'] == true){
     print('Match');
   }else {
