@@ -4,12 +4,18 @@ void main (){
  // Example:
  // Input: 17
  // Output: 17 is a prime number.
- 
- for (int i = 2; i <= 10 / i; ){
-  if (10 % i == 0){
-   // print('Number is not Prime');
-  } else {
-   // print('Number is Prime');
-  }
+
+int number = 7;
+List fector = [];
+
+for (int i = 1; i <= number; i++){
+ if(number % i == 0){
+  fector.add(i);
+ }
+}
+ if (fector.length > 2){
+  print('$number is not a prime number');
+ } else {
+  print('$number is a prime number');
  }
 }
