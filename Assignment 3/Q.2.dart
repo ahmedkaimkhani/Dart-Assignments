@@ -5,7 +5,9 @@ void main (){
  // Example:
  // Input: 10
  // Output: 0 1 1 2 3 5 8
- 
+
+ // Two Methods to do This Fibonacci Squance Number
+ // First Method
  int input = 10; // The number of Fibonacci sequence elements to print
 
  int a = 0; // First Fibonacci number
@@ -18,13 +20,13 @@ void main (){
  for (int i = 2; i < 7; i++){
   if (i >= 1){
     int c = a + b; // Calculate the next Fibonacci number by adding the previous two numbers
-    a = b;
-    b = c;
-    print(c);
+    a = b; // Update a with the value of b for the next iteration
+    b = c; // Update b with the value of c for the next iteration
+    print(c);  // Print the next Fibonacci number
   }
-  
  }
 
+// Second Method
 //  int n = 10; // The number of Fibonacci sequence elements to print
 
 //   int a = 0; // First Fibonacci number
