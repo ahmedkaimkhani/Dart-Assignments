@@ -5,9 +5,11 @@ void main() {
   // Output: 17 is a prime number.
 
   // Note: There are two methods to check prime number or not.
+  // First Method If, Else If, Else.
 
+  // initialize a number you want to check it's prime or not.
   int number = 5;
-
+  
   if (number < 2) {
     print("$number is not a Prime Number");
   } else if (number == 2 || number == 3){
@@ -17,6 +19,8 @@ void main() {
   } else {
     print('$number is a Prime Number');
   }
+  
+  // Second Loop and If Else Method
 
   // check number it's prime number or not.
  /* int number = 6;
