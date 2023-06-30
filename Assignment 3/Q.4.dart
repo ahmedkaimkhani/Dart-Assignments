@@ -13,8 +13,8 @@ void main (){
   int number1 = number - 1;
   int number2 = number * number1;
   print(number2);
+  number --;
   i++;
 
  }
- print(number);
  }
