@@ -10,8 +10,11 @@ void main (){
  int number = 5;
 
  while (i <= number){
-  number * number;
+  int number1 = number - 1;
+  int number2 = number * number1;
+  print(number2);
   i++;
+
  }
  print(number);
  }
