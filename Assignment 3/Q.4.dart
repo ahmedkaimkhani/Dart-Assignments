@@ -12,8 +12,9 @@ void main (){
  while (i <= number){
   int number1 = number - 1;
   int number2 = number * number1;
-  print(number2);
   number1 = number2;
+  print(number1);
+  
   number --;
   i++;
 
