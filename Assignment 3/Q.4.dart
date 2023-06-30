@@ -6,6 +6,7 @@ void main (){
  // Input: 5
  // Output: Factorial of 5 is 120
  
+ // For Loop Method
  // initialize that number you want factorial of that number
  // int number = 5;
 
@@ -18,12 +19,17 @@ void main (){
  }
  print('Factorial of $number in $factorial');
  */
- int number = 5;
- int factorial = 1;
- int i = 1;
+ // While loop method 
 
+ // initialize that number you want factorial of that number
+ int number = 5;
+ // for multiply
+ int factorial = 1;
+ // initialize i for itration
+ int i = 1;
+ // While Loop Method to check factorial method
  while(i <= number){
-   factorial *= i;
+   factorial *= i; // Equivalent to: factorial = factorial * i;
    i++;
  } 
  print('Factorial of $number in $factorial');
