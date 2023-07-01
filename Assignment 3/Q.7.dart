@@ -10,9 +10,12 @@ void main() {
   // ...
   // 5 x 10 = 50
 
+  // initialize number which table you want
   int number = 5;
-
+  
+  // Loops method
   for (int i = 1; i <= 10; i++) {
+    // print table 
     print('$number x $i = ${i * number}');
   }
 }
