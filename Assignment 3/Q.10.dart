@@ -11,9 +11,10 @@ void main (){
 
 int number = 1;
 int numberOfTimes = 5;
+int cube = 0;
 
 for (int i = 1; i <= numberOfTimes; i++){
-  int cube = number * number * number;
+ cube = number * number * number;
   print('Number is: $i and cube of the $i is:$cube');
  ++number;
 }
