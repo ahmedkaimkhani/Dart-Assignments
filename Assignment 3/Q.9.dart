@@ -1,14 +1,14 @@
 void main (){
-  // Q.9: Implement a function that checks if a given string is a palindrome.
-  // Example:
-  // Input: "radar"
-  // Output: "radar" is a palindrome.
+  String str = 'radar';
 
-  List palindrome = ['ahmed', 'karachi','stats', 'radar'];
-
-  if (palindrome[3].reversed == palindrome[3]){
-    print('${palindrome[3]} is a palindrome');
-  } else {
-    print('${palindrome[3]} is not a palindrome');
+  if (palindrome(str)){
+    print("$str is palindrome"); 
+  }else {
+    print("$str is not palindrome");
   }
 }
+
+ bool palindrome(String str){
+  String reversedstr = str.split('').reversed.join('');
+  return str == reversedstr;
+ }
