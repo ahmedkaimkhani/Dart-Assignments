@@ -14,9 +14,14 @@ void main() {
     }
 
     // the variable k is used as a loop counter in the inner loop.
-  // It represents the number of asterisks to be printed in each row.
+  // It represents the number to be printed in each row.
     for (int k = 1; k <= i; k++) {
+
+      // print statement give you newline when printing again.
+      // while "stdout.write" doesn't give you the newline. it continou to print on the same line.
+      // print 'number' here because i want to print new numbers in each row, and down i do postincrement.
       stdout.write("$number ");
+      // post increment to get new numbers in each row
       number++;
     }
     stdout.write("\n"); // Print a new line after each row
