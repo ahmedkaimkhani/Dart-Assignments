@@ -13,6 +13,6 @@ void main() {
       stdout.write("$number ");
       number++;
     }
-    stdout.writeln(""); // Print a new line after each row
+    stdout.write("\n"); // Print a new line after each row
   }
 }
