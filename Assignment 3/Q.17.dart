@@ -9,10 +9,16 @@ void main (){
   String email = 'ak9302359gmail.com';
   String password = 'ahmed59061@';
 
-  stdout.write('Enter your email');
+  stdout.write('Enter your email: ');
   var email1 = stdin.readLineSync();
 
-  print('Enter your password');
+  stdout.write('Enter your password: ');
   var password1 = stdin.readLineSync();
+
+  if (email1 == email && password1 == password){
+    print('login Successful');
+  } else{
+    print('Login Failed');
+  }
   
 }
