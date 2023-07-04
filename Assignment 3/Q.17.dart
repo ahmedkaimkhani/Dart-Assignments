@@ -6,8 +6,8 @@ void main (){
   // login successful." Otherwise, keep asking for the email and password
   // until the correct credentials are provided.
 
-  String email = 'ak9302359gmail.com';
-  String password = 'ahmed59061@';
+  String email = 'ak9302359@gmail.com';
+  String password = '123456';
 
   stdout.write('Enter your email: ');
   var email1 = stdin.readLineSync();
