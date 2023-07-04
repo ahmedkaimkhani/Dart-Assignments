@@ -17,12 +17,12 @@ void main (){
 
   if ((email1 == email) && (password1 == password)){
     print('User Login Successful');
+  } else if (!(email1 == email) && !(password1 == password)){
+    print('Incorrect Email & Password');
   } else if (!(email1 == email)){
     print('Incorrect Email');
-  } else if (!(password1 == password)){
-    print('Incorrect Password');
   } else {
-    print('User Login Failed');
+    print('Incorrect Password');
   }
   
 }
