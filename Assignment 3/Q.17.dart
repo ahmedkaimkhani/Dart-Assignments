@@ -15,10 +15,14 @@ void main (){
   stdout.write('Enter your password: ');
   var password1 = stdin.readLineSync();
 
-  if (!(email1 == email && password1 == password)){
-    print('Login Failed');
-  } else{
-    print('login Successful');
+  if ((email1 == email) && (password1 == password)){
+    print('User Login Successful');
+  } else if (!(email1 == email)){
+    print('Incorrect Email');
+  } else if (!(password1 == password)){
+    print('Incorrect Password');
+  } else {
+    print('User Login Failed');
   }
   
 }
