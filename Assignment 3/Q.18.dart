@@ -8,16 +8,15 @@ void main (){
   // asking for the email and password until the correct credentials are
   // provided.
   
-  List userAccounts = [
+  List userCredentials = [
     {'email': 'ak9302359@gmail.com', 'password': '1234'},
     {'email': 'usman@gmail.com', 'password': '1122'},
     {'email': 'naveed@gmail.com', 'password': '1112'},
     {'email': 'asim@gmail.com', 'password': '1222'}
   ];
-  var email1 = stdin.readLineSync();
-  var password1 = stdin.readLineSync();
 
-  if (userAccounts.any((user) => 
-  (email1 == user) && (password1 == user))){
-  }
+  stdout.write('Enter your email: ');
+  String? email = stdin.readLineSync();
+  stdout.write('Enter your password: ');
+  String? password = stdin.readLineSync();
 }
