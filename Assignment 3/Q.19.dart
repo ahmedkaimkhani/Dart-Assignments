@@ -4,8 +4,8 @@ void main (){
 
   List<dynamic> number = [1,2,4,7,5,9,2,8];
 
-  for (int i = 1; i <= number.length; i++){
-    if (number.length > 5){
+  for (int number in number){
+    if (number > 5){
       print(number);
     }
   }
