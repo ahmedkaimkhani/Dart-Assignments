@@ -7,6 +7,7 @@ void main() {
   // for each subject is 100) and print the student's name along with their
   // grade.
 
+  // create List map of Students details
   List<Map<String, dynamic>> students = [
     {
       'name': 'Ahmed',
@@ -27,10 +28,14 @@ void main() {
       'section': 'A'
     },
   ];
+  // for in loop 
   for (var student in students){
+    // method to get access of map key, value 
     String name = student['name'];
     List<int> marks = student['marks'];
+    // create variable for get average 
     double average = marks.reduce((a, b) => a + b) / marks.length;
+    // create variable for grade
     String grade = calculateGrade(average);
 
     print('Name $name');
@@ -39,6 +44,7 @@ void main() {
   }
 }
 
+// create grade method 
 String calculateGrade(double average){
   if (average >= 90){
     return 'A';
