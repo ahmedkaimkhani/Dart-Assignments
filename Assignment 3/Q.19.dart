@@ -4,10 +4,11 @@ void main (){
 
   // create list of numbers 
   List<int> number = [1,2,4,7,5,9,2,8];
+  int b = 5;
 
   // for in loop method to print > 5 numbers
   for (int number in number){
-    if (number > 5){
+    if (number > b){
       print(number);
     }
   }

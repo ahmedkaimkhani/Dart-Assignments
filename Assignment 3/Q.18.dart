@@ -8,16 +8,26 @@ void main (){
   // asking for the email and password until the correct credentials are
   // provided.
   
-  List userCredentials = [
+  List<Map<String, String>> userCredentials = [
     {'email': 'ak9302359@gmail.com', 'password': '1234'},
     {'email': 'usman@gmail.com', 'password': '1122'},
     {'email': 'naveed@gmail.com', 'password': '1112'},
     {'email': 'asim@gmail.com', 'password': '1222'}
   ];
-
+  bool logedIn = false;
+  while(!logedIn){
   stdout.write('Enter your email: ');
-  String? email = stdin.readLineSync();
+  String? emailEnter = stdin.readLineSync();
   stdout.write('Enter your password: ');
-  String? password = stdin.readLineSync();
+  String? passwordEnter = stdin.readLineSync();
 
+  for (var credentials in userCredentials){
+    if (emailEnter == credentials['email'] && passwordEnter == credentials['password']){
+      print('User Login Successful');
+      break;
+    } else {
+      print('Invalid Credentials. Please try again');
+    }
+  }
+  }
 }
