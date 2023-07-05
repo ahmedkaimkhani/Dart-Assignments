@@ -6,7 +6,7 @@ void main (){
   int sumOfSquare = 0;
 
   for (int number in numbers){
-    if (number % 2 == 0){
+    if (number % 2 == 1){
       sumOfSquare = sumOfSquare + (number * number);
     }
   }
