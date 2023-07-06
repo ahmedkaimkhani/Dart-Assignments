@@ -14,19 +14,22 @@ void main (){
     {'email': 'naveed@gmail.com', 'password': '1112'},
     {'email': 'asim@gmail.com', 'password': '1222'}
   ];
+    
+
+  bool logedIn = false;
+
+  while (logedIn == false){
+    
     stdout.write('Enter your email: ');
   String? emailEnter = stdin.readLineSync();
   stdout.write('Enter your password: ');
   String? passwordEnter = stdin.readLineSync();
 
-  bool logedIn = false;
-
-  while (!false){
     for (var credentials in userCredentials){
       if (emailEnter == credentials['email'] && passwordEnter == credentials['password']){
         print('User Login Successful');
-        //logedIn = true;
-        break;
+        logedIn = true;
+       // break;
       } else {
         print('Login Failed');
       }
