@@ -25,6 +25,7 @@ void main (){
     for (var credentials in userCredentials){
       if (emailEnter == credentials['email'] && passwordEnter == credentials['password']){
         print('User Login Successful');
+        //logedIn = true;
         break;
       } else {
         print('Login Failed');
