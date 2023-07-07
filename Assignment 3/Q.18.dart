@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:math';
 
 void main (){
   // Q.18: Write a program that asks the user for their email and password. You
@@ -18,23 +19,45 @@ void main (){
 
   bool logedIn = false;
 
-  while (logedIn == false){
+  // First: Method With While Loop in while loop For Loop
+
+  // while (logedIn == false){
     
+  //   stdout.write('Enter your email: ');
+  // String? emailEnter = stdin.readLineSync();
+  // stdout.write('Enter your password: ');
+  // String? passwordEnter = stdin.readLineSync();
+
+  //   for (var credentials in userCredentials){
+  //     if (emailEnter == credentials['email'] && passwordEnter == credentials['password']){
+  //       print('User Login Successful');
+  //       logedIn = true;
+  //      // break;
+  //     } else {
+  //       print('Login Failed');
+  //     }
+  //   }
+  // }
+
+  // Second: Method with While loop & if else
+
+  while(!logedIn){
     stdout.write('Enter your email: ');
   String? emailEnter = stdin.readLineSync();
   stdout.write('Enter your password: ');
   String? passwordEnter = stdin.readLineSync();
 
-    for (var credentials in userCredentials){
-      if (emailEnter == credentials['email'] && passwordEnter == credentials['password']){
-        print('User Login Successful');
-        logedIn = true;
-       // break;
-      } else {
-        print('Login Failed');
-      }
-    }
+  logedIn = userCredentials.any((creddentials) {
+    return emailEnter == creddentials['email'] && passwordEnter == creddentials['password'];
+  });
+
+  if (logedIn){
+    print('User login successful');
+  } else{
+    print('login invalid. please try again');
   }
+  }
+
   
 }
 
